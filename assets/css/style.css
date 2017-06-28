@@ -1,0 +1,178 @@
+body {
+    background: #29373d;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #ED591C;
+}
+.container {
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+hr {
+    background: #77C8F0;
+    height: 1px;
+    border: none;
+}
+h3 {
+    margin: 5px 0 0 0;
+    color: #C0DA00;
+}
+p {
+    margin: 0 0 0 0;
+}
+p#play:hover {
+    color: #C0DA00;
+}
+
+p#play-again:hover {
+    color: #C0DA00;
+    display: none;
+}
+
+
+
+
+
+
+/*  ---------------  HEADER CONTENT  ---------------  */
+
+#title {
+    font-size: 4em;
+    margin: 40px 0 10px 0;
+    color: #77C8F0;
+}
+#play {
+    margin: 10px auto 30px auto;
+    font-size: 1.5em;
+}
+#play-again {
+    display: none;
+    margin: 10px auto 30px auto;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+/*  ---------------  SHIPS  ---------------  */
+
+.ship {
+    height: 120px;
+    margin: 0 0 0 0;
+}
+.ship-lineup {
+    display: none;
+}
+#user-instructions {
+    padding: 0 35px 0 30px;
+    margin: 45px 0 0 0;
+    display: none;
+}
+.img-container {
+    position: relative;
+    width: 25%;
+    float: left;
+    margin: 0 0 0 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    display: none;
+}
+.img-container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*
+#overlay1 {
+    left: -24px;
+}
+#overlay2 {
+    left: -11px;
+}
+*/
+#overlay3 {
+    left: -6px;
+}
+#overlay4 {
+    left: -19px;
+}
+
+
+
+
+
+
+
+
+
+/*  ---------------  BATTLE AREA  ---------------  */
+
+#attack-button {
+    margin: 10px auto 0 auto;
+    font-size: 1.5em;
+    display: none;
+}
+p#attack-button:hover {
+    color: #C0DA00;
+}
+.guage {
+    height: 80px;
+    margin-top: 10px;
+    display: none;
+}
+.guage-label {
+    font-size: 20px;
+    color: #77C8F0;
+}
+.ship-attack {
+    transform: rotate(90deg);
+    margin: 40px 0 50px 0;
+    display: none;
+}
+.ship-defend {
+    transform: rotate(-90deg);
+    margin: 40px 0 50px 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

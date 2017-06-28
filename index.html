@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+
+        <div class="container">
+<!-----------------   HEADER   ----------------->
+            <div class="row">
+                <nav class="col-lg-12" align="center">
+                    <h1 id="title">ESCAPE THE REEVERS</h1>
+                </nav>
+
+                <nav class="col-lg-12" align="center">
+                    <p id="play" class="btn">PLAY</p>
+                    <p id="play-again" class="btn">PLAY AGAIN</p>
+                </nav>
+            </div>
+
+        
+            
+            
+<!-----------------   SHIP LINEUP   ----------------->
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <p id="user-instructions">STEAL A SHIP ===></p>
+                </div>
+
+                <div id="ship-container" class="col-lg-9 col-md-9 col-sm-9">
+                    <div id="ship1" class="ship-container img-container col-lg-3" align="center">
+                        <img class="ship ship-lineup" src="assets/img/ship15.png" alt="Ship 1">
+                        <div id="overlay1" class="overlay">
+                            <div id="text1" class="text">HMS Fukuup<br>HP: 200<br>A: 2<br>CA: 15</div>
+                        </div>
+                    </div>
+                    <div id="ship2" class="ship-container img-container col-lg-3" align="center">
+                        <img class="ship ship-lineup" src="assets/img/ship14.png" alt="Ship 2">
+                        <div id="overlay2" class="overlay">
+                            <div id="text2" class="text">SS Killemall<br>HP: 175<br>A: 3<br>CA: 12</div>
+                        </div>
+                    </div>
+                    <div id="ship3" class="ship-container img-container col-lg-3" align="center">
+                        <img class="ship ship-lineup" src="assets/img/ship11.png" alt="Ship 3">
+                        <div id="overlay3" class="overlay">
+                            <div id="text3" class="text">SS Uded<br>HP: 150<br>A: 4<br>CA: 9</div>
+                        </div>
+                    </div>
+                    <div id="ship4" class="ship-container img-container col-lg-3" align="centers">
+                        <img class="ship ship-lineup" src="assets/img/ship16.png" alt="Ship 4">
+                        <div id="overlay4" class="overlay">
+                            <div id="text4" class="text">USS Pyscho<br>HP: 125<br>A: 5<br>CA: 6</div>
+                        </div>
+                    </div>
+                </div>    
+            
+            </div>
+
+           <hr>
+            
+            
+<!-----------------   HIT POINT GUAGES   ----------------->
+            <div class="row">
+                
+                <div id="hp-guage-attacker" class="col-lg-4 guage" align="center">
+                    <p class="guage-label">Hit Points</p>
+                    <h3 id="attacker-hp">200</h3>
+                </div>
+                
+                <div class="col-lg-4" align="center">
+                    <p id="attack-button" class="btn">ATTACK</p>
+                </div>
+                
+                <div id="hp-guage-defender" class="col-lg-4 guage" align="center">
+                    <p class="guage-label">Hit Points</p>
+                    <h3 id="defender-hp">200</h3>
+                </div>
+            
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+<!-----------------   BATTLE AREA   ----------------->
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="imgContainer" align="center">
+                        <img class="ship ship-attack" src="assets/img/ship15.png" alt="Attacking Ship">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="imgContainer" align="center">
+                        <img class="ship ship-defend" src="assets/img/ship14.png" alt="Defending Ship">
+                    </div>
+                </div>
+            </div>
+            
+
+            
+ 
+            
+            
+            
+<!-----------------   ATTACK / DAMAGE GUAGES   ----------------->         
+            <div class="row">
+                
+                <div id="attack-guage-attacker" class="col-lg-3 guage" align="center">
+                        <p class="guage-label">Attack</p>
+                        <h3 id="attacker-attack">200</h3>
+                </div>
+                
+                <div id="damage-guage-attacker" class="col-lg-3 guage" align="center">
+                        <p class="guage-label">Counter Attack</p>
+                        <h3 id="attacker-damage">200</h3>
+                </div>
+                
+                <div id="attack-guage-defender" class="col-lg-3 guage" align="center">
+                        <p class="guage-label">Attack</p>
+                        <h3 id="defender-attack">200</h3>
+                </div>
+                
+                <div id="damage-guage-defender" class="col-lg-3 guage" align="center">
+                        <p class="guage-label">Counter Attack</p>
+                        <h3 id="defender-damage">200</h3>
+                </div>
+            
+            </div> 
+            
+            
+            <hr>
+            
+            
+            
+            
+            
+            
+            
+        
+        </div>  <!-----------------  END OF CONTAINER  ------------------------>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="assets/js/rpgWars.js"></script>
+	</body>
+</html>
